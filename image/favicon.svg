@@ -1,0 +1,22 @@
+<svg width="96" height="96" version="1.1" viewBox="0 0 25.4 25.4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style>
+  @media (prefers-color-scheme: dark) {
+   .text {fill: black}
+  }
+ </style>
+ <defs>
+  <linearGradient id="linearGradient848" x1="67.091" x2="67.847" y1="3.977e-7" y2="135.88" gradientTransform="scale(.18745 .1875)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f38181" offset="0"/>
+   <stop stop-color="#f38181" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient858" x1="67.091" x2="68.376" y2="135.47" gradientTransform="matrix(.18745 0 0 .1875 1.3103e-6 0)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f38181" offset="0"/>
+   <stop stop-color="#fce38a" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <rect width="25.4" height="25.372" fill="url(#linearGradient848)" fill-rule="evenodd" stroke-width=".049602"/>
+  <rect x="1.0224e-6" y="2.0453e-6" width="25.393" height="25.4" fill="url(#linearGradient858)" stroke-width=".049602"/>
+  <text class="text" transform="scale(1.0045 .99547)" x="2.5318816" y="20.1661" fill="#ffffff" font-family="sans-serif" font-size="21.167px" letter-spacing="-.19857px" stroke-width=".049942" word-spacing="0px" style="line-height:0" xml:space="preserve"><tspan class="text" x="2.5318816" y="20.1661" fill="#ffffff" font-family="Montserrat" font-size="21.167px" font-weight="bold" stroke-width=".049942" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">M</tspan></text>
+ </g>
+</svg>

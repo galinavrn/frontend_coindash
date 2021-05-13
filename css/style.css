@@ -1,0 +1,228 @@
+/*--------------------------------------------------*/
+/*----------------------------------------------base*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #2e3880;
+}
+
+.wrap {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100%;
+}
+
+.article {
+  width: 100%;
+  min-height: 100%;
+  /*--------------------------------------for-fullscreen
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  ----------------------------------------------------*/
+}
+
+.section {
+  padding: 64px 0px;
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  .section {
+    padding-top: calc(32px + 32 * ((100vw - 320px)/(1600 - 320)));
+    padding-bottom: calc(32px + 32 * ((100vw - 320px)/(1600 - 320)));
+  }
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 32px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 16px;
+  }
+}
+.container_header {
+  height: 100%;
+  padding: 0px 32px;
+}
+@media (max-width: 767px) {
+  .container_header {
+    padding: 0px 16px;
+  }
+}
+
+/*--------------------------------------------------*/
+/*--------------------------------------------header*/
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 24px;
+}
+@media (max-width: 853px) {
+  .header {
+    padding-top: 0px;
+  }
+}
+.header-body {
+  height: 100%;
+  margin: 0px -16px;
+  padding: 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (max-width: 767px) {
+  .header-body {
+    padding: 4px 0px;
+    display: block;
+  }
+}
+.header-logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header-logo_link {
+  display: block;
+  padding: 8px 16px;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.header-logo_link > span {
+  color: #ff78cb;
+  font-weight: 700;
+}
+.header-menu {
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .header-menu {
+    background-color: #293370;
+    overflow-y: auto;
+    margin: 0px auto;
+  }
+}
+.header-menu_list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 479px) {
+  .header-menu_list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.header-menu_list > li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header-menu_list > li:not(:last-child) {
+  padding-right: 16px;
+}
+@media (max-width: 853px) {
+  .header-menu_list > li:not(:last-child) {
+    padding-right: 8px;
+  }
+}
+@media (max-width: 599px) {
+  .header-menu_list > li:not(:last-child) {
+    padding-right: 4px;
+  }
+}
+@media (max-width: 499px) {
+  .header-menu_list > li:not(:last-child) {
+    padding-right: 0px;
+  }
+}
+.header-menu_link {
+  position: relative;
+  padding: 8px 16px;
+  color: #cad0ff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  word-wrap: none;
+}
+.header-menu_link_active {
+  color: #ffffff;
+}
+.header-menu_link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0%;
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header-menu_link:hover {
+  color: #ffffff;
+}
+.header-menu_link:hover::after {
+  left: 16px;
+  width: calc(100% - 32px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*--------------------------------------------------*/
+/*-------------------------------------------------1*/
+/*-------------------------------------------------2*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------3*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------4*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------5*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------6*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------7*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------8*/
+/*--------------------------------------------------*/
+/*-------------------------------------------------9*/
+/*--------------------------------------------------*/
+/*------------------------------------------------10*/
+/*--------------------------------------------------*/
+/*------------------------------------------------11*/
+/*--------------------------------------------------*/
+/*--------------------------------------------footer*/
