@@ -14,41 +14,594 @@
   <link rel="manifest" href="image/manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
   <title> CoinDash -The Digital Asset for Payments</title>
 </head>
-<body>
+<body> <!--active-->
   <div class="wrap">
-    <header class="header">
-      <div class="container container_header">
-        <div class="header-body">
-          <div class="header-logo">
-            <a href="#" class="header-logo_link">Coin<span>Dash</span></a>
+    
+    <header class="header-wrap">
+      <div class="container">
+        <div class="header"> <!--active-->
+          <div class="header_logo-wrap">
+            <a href="#" class="header_logo">Coin<span>Dash</span></a>
           </div>
-          <nav class="header-menu">
-            <ul class="header-menu_list">
-              <li><a href="#solutions" class="header-menu_link header-menu_link_active">Solutions</a></li>
-              <li><a href="#usecases" class="header-menu_link">Use&nbsp;Cases</a></li>
-              <li><a href="#resources" class="header-menu_link">Resources</a></li>
-              <li><a href="#about" class="header-menu_link">About</a></li>
-              <li><a href="#contact" class="header-menu_link">Contact</a></li>
+          <div class="header_burger-wrap"> <!--active-->
+            <div class="header_burger">
+              <span class="header_burger-stick"></span>
+              <span class="header_burger-stick"></span>
+              <span class="header_burger-stick"></span>
+            </div>
+          </div>
+          <nav class="header_menu-wrap"> <!--active-->
+            <ul class="header_menu">
+              <li><a href="#solutions" class="header_menu-link header_menu-link_active">Solutions</a></li>
+              <li><a href="#usecases" class="header_menu-link">Use&nbsp;Cases</a></li>
+              <li><a href="#resources" class="header_menu-link">Resources</a></li>
+              <li><a href="#about" class="header_menu-link">About</a></li>
+              <li><a href="#contact" class="header_menu-link">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+
     <main class="main">
       <article class="article">
-        <section></section>
-        <section></section>
-        <section></section>
+
+        <section class="intro-wrap section">
+          <div class="container">
+            <div class="intro">
+              <h1 class="intro_header">The <span>Digital&nbsp;Asset</span> for&nbsp;Payments</h1>
+              <p class="intro_text">It’s the fastest and most scalable digital asset, enabling real-time global payments anywhere in the world.</p>
+              <a href="#" class="intro_link">
+                <div class="intro_link-text">
+                  <span>Explore&nbsp;Coin</span>
+                  <div class="intro_link-image">
+                    <img src="image/arrow.png" alt="Arrow">
+                  </div>
+                </div>
+              </a>
+              <div class="intro_wave">
+                <img class="intro_wave-line" src="image/graphic.png" alt="Graphic">
+                <img class="intro_wave-shadow" src="image/graphic_shadow.png" alt="Graphic shadow">
+              </div>
+              <p class="intro_about">Built for enterprise use, Coin offers banks and payment providers a reliable, on-demand option to source liquidity for cross-border payments.</p>
+              <a href="#" class="intro_link-clear">
+                <p class="intro_link-clear_text">View&nbsp;Features</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="where-wrap section">
+          <div class="container">
+            <div class="where">
+              <div class="where_heading">Coin Everywhere</div>
+              <div class="where_case">
+                <div class="where_case-item_wrap">
+                  <div class="where_case-item">
+                    <div class="where_case-item_image">
+                      <img src="image/where_01.png" alt="Icon">
+                    </div>
+                    <h4 class="where_case-item_heading">Banking Software</h4>
+                    <p class="where_case-item_text">Using Coin, banks can source liquidity on demand in real time without having to pre-fund nostro accounts.</p>
+                  </div>
+                </div>
+                <div class="where_case-item_wrap">
+                  <div class="where_case-item">
+                    <div class="where_case-item_image">
+                      <img src="image/where_02.png" alt="Icon">
+                    </div>
+                    <h4 class="where_case-item_heading">Payment Providers</h4>
+                    <p class="where_case-item_text">Payment Providers use Coin to lower foreign exchange costs and provide faster payment settlement.</p>
+                  </div>
+                </div>
+                <div class="where_case-item_wrap">
+                  <div class="where_case-item">
+                    <div class="where_case-item_image">
+                      <img src="image/where_03.png" alt="Icon">
+                    </div>
+                    <h4 class="where_case-item_heading">Digital Agreements</h4>
+                    <p class="where_case-item_text">It’s the fastest and most scalable digital asset, enabling real-time global payments anywhere in the world.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<!--
+        <section class="sale-wrap section">
+          <div class="container">
+            <div class="sale">
+              <h2 class="sale-heading">Coindash&nbsp;Token&nbsp;Sale</h2>
+              <p class="sale-text">Coindash Token Pool is a fixed token economy set by the demand of the<br>Coin Token Main Sale, which concluded on May 20</p>
+              <div class="sale-counter">
+                <div class="sale-counter-item_wrap">
+                  <div class="sale-counter_message-wrap" id="counter-message">
+                    <div class="sale-counter_message"><p>End of sale</p></div>
+                    <p class="sale-counter_message-text">Try to make it next time!</p>
+                  </div>
+                  <div class="sale-counter-item">
+                    <div class="sale-counter-item_time"><p id="counter-days">30</p></div>
+                    <p class="sale-counter-item_name">Days</p>
+                  </div>
+                </div>
+                <div class="sale-counter-item_wrap">
+                  <div class="sale-counter-item">
+                    <div class="sale-counter-item_time"><p id="counter-hours"></p></div>
+                    <div class="sale-counter-item_name">Hours</div>
+                  </div>
+                </div>
+                <div class="sale-counter-item_wrap">
+                  <div class="sale-counter-item">
+                    <div class="sale-counter-item_time"><p id="counter-minutes"></p></div>
+                    <div class="sale-counter-item_name">Minutes</div>
+                  </div>
+                </div>
+                <div class="sale-counter-item_wrap">
+                  <div class="sale-counter-item">
+                    <div class="sale-counter-item_time"><p id="counter-seconds"></p></div>
+                    <div class="sale-counter-item_name">Seconds</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sale-sausage">
+                <div class="sale-sausage_base">
+                  <div class="sale-sausage_base-progress"></div>
+                </div>
+              </div>
+              <div class="sale-numbers">
+                <div class="sale-numbers-item_wrap">
+                  <div class="sale-numbers-item">
+                    <div class="sale-numbers-item_name">Pool supply</div>
+                    <div class="sale-numbers-item_number">14,325,000,0000</div>
+                  </div>
+                </div>
+                <div class="sale-numbers-item_wrap">
+                  <div class="sale-numbers-item">
+                    <div class="sale-numbers-item_name">Avalible per stage</div>
+                    <div class="sale-numbers-item_number">50,000,000,000</div>
+                  </div>
+                </div>
+                <div class="sale-numbers-item_wrap">
+                  <div class="sale-numbers-item">
+                    <p class="sale-numbers-item_name">Amount left now</p>
+                    <p class="sale-numbers-item_number">38,525,215,700</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sale-button">
+                <a href="#" class="sale-button_link">
+                  <div class="sale-button_link-text">
+                    <span>Purchase&nbsp;Coin&nbsp;Now</span>
+                    <div class="sale-button_link-image">
+                      <img src="image/arrow.png" alt="Arrow">
+                    </div>
+                  </div>
+                </a>
+                <p class="sale-button_text">Limited supply: after sale ends, coin obtained only through mining & exchanges</p>
+              </div>
+              <div class="sale-donuts">
+                <div class="sale-donuts-item_wrap">
+                  <div class="sale-donuts-item">
+                    <h3 class="sale-donuts-item_heading">Token&nbsp;Distribution</h3>
+                    <div class="sale-donuts-item_case">
+                      <div class="sale-donuts-item_case-donut" id="donut-first">
+                        <svg width="320" height="320" viewBox="0 0 352 352" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="donut-hole" cx="160" cy="160" r="96" fill="transparent"></circle>
+                          <circle class="donut-ring" cx="176" cy="176" r="128" fill="transparent" stroke="rgb(46, 56, 128)" stroke-width="64"></circle>
+                          <circle class="donut-segment donut-segment-five" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="118 686" stroke-dashoffset="-486"></circle>
+                          <circle class="donut-segment donut-segment-four" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="170 634" stroke-dashoffset="-316"></circle>
+                          <circle class="donut-segment donut-segment-three" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="60 744" stroke-dashoffset="-256"></circle>
+                          <circle class="donut-segment donut-segment-two" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="362 442" stroke-dashoffset="106"></circle>
+                          <circle class="donut-segment donut-segment-one" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="94 710" stroke-dashoffset="200"></circle>
+                        </svg>
+                      </div>
+                      <ul class="sale-donuts-item_case-legend">
+                        <li class="sale-donuts-item_case-legend_one">Token&nbsp;Distribution</li>
+                        <li class="sale-donuts-item_case-legend_two">Advisors&nbsp;&&nbsp;Partners</li>
+                        <li class="sale-donuts-item_case-legend_three">Company&nbsp;Reserve</li>
+                        <li class="sale-donuts-item_case-legend_four">Bounty</li>
+                        <li class="sale-donuts-item_case-legend_five">Team</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="sale-donuts-item_wrap">
+                  <div class="sale-donuts-item">
+                    <h3 class="sale-donuts-item_heading">Allocation&nbsp;of&nbsp;funds</h3>
+                    <div class="sale-donuts-item_case">
+                      <div class="sale-donuts-item_case-donut" id="donut-second">
+                        <svg width="320" height="320" viewBox="0 0 352 352" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="donut-hole" cx="160" cy="160" r="96" fill="transparent"></circle>
+                          <circle class="donut-ring" cx="176" cy="176" r="128" fill="transparent" stroke="rgb(46, 56, 128)" stroke-width="64"></circle>
+                          <circle class="donut-segment donut-segment-two-five" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="92 712" stroke-dashoffset="-478"></circle>
+                          <circle class="donut-segment donut-segment-two-four" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="368 436" stroke-dashoffset="-110"></circle>
+                          <circle class="donut-segment donut-segment-two-three" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="60 744" stroke-dashoffset="-50"></circle>
+                          <circle class="donut-segment donut-segment-two-two" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="165 639" stroke-dashoffset="115"></circle>
+                          <circle class="donut-segment donut-segment-two-one" cx="176" cy="176" r="128" fill="transparent" stroke-width="64" stroke-dasharray="119 685" stroke-dashoffset="234"></circle>
+                        </svg>
+                      </div>
+                      <ul class="sale-donuts-item_case-legend">
+                        <li class="sale-donuts-item_case-legend-two_one">Marketing&nbsp;&&nbsp;Sales</li>
+                        <li class="sale-donuts-item_case-legend-two_two">Product&nbsp;Development</li>
+                        <li class="sale-donuts-item_case-legend-two_three">Legal</li>
+                        <li class="sale-donuts-item_case-legend-two_four">Admin&nbsp;&&nbsp;Operations</li>
+                        <li class="sale-donuts-item_case-legend-two_five">Overhead&nbsp;Expenses</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="why-wrap section">
+          <div class="container">
+            <div class="why">
+              <div class="why-case">
+                <div class="why-case-item_wrap">
+                  <div class="why-case-item">
+                    <img src="/image/why_image.png" alt="Nowday gadjet">
+                  </div>
+                </div>
+                <div class="why-case-item_wrap">
+                  <div class="why-case-item">
+                    <p class="why-case-item_subtitle">Why&nbsp;CoinDash</p>
+                    <h2 class="why-case-item_heading">Together,<br>We’re&nbsp;Modernizing<br>Global Payments</h2>
+                    <p class="why-case-item_about">It’s the fastest and most scalable digital asset, enabling real-time global payments anywhere in the world.</p>
+                    <p class="why-case-item_text">Today the world sends more than $155 trillion* across borders. Yet, the underlying infrastructure is dated and flawed. Coindash connects banks, payment providers and digital asset exchanges via RippleNet to provide one frictionless experience to send money globally.</p>
+                    <a href="#" class="why-case-item_link">
+                      <p class="why-case-item_link-text">Read&nbsp;Our&nbsp;Mission</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="folks-wrap section">
+          <div class="container">
+            <div class="folks">
+              <p class="folks_heading">Trusted&nbsp;by&nbsp;these&nbsp;folks</p>
+              <div class="folks_slider-wrap">
+                <div class="folks_slider-container swiper-container">
+                  <div class="folks_slider swiper-wrapper">
+                    <div class="folks_slider-item swiper-slide">
+                      <div class="folks_slider-item_image">
+                        <img src="image/folks_01_coinone.png" alt="Coinone">
+                      </div>
+                    </div>
+                    <div class="folks_slider-item swiper-slide">
+                      <div class="folks_slider-item_image">
+                        <img src="image/folks_02_gatehub.png" alt="Gatehub">
+                      </div>
+                    </div>
+                    <div class="folks_slider-item swiper-slide">
+                      <div class="folks_slider-item_image">
+                        <img src="image/folks_03_bitstamp.png" alt="Bitstamp">
+                      </div>
+                    </div>
+                    <div class="folks_slider-item swiper-slide">
+                      <div class="folks_slider-item_image">
+                        <img src="image/folks_04_coincheck.png" alt="Coincheck">
+                      </div>
+                    </div>
+                    <div class="folks_slider-item swiper-slide">
+                      <div class="folks_slider-item_image">
+                        <img src="image/folks_05_kraken.png" alt="Kraken">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news-wrap section">
+          <div class="container">
+            <div class="news">
+              <h2 class="news_heading">Latest&nbsp;Crypto&nbsp;News</h2>
+              <div class="news_case">
+                <div class="news_case-item_wrap">
+                  <div class="news_case-item">
+                    <p class="news_case-item_subtitle">by Lubomir Tassev •  28 Mar 2018</p>
+                    <h3 class="news_case-item_title">Nvidia Mining GPU to Be Launched Sooner Than Expected, Reports</h3>
+                  </div>
+                </div>
+                <div class="news_case-item_wrap">
+                  <div class="news_case-item">
+                    <p class="news_case-item_subtitle">by Jamie Redman • 20 Mar 2018</p>
+                    <h3 class="news_case-item_title">Bitcoin Classes Are All the Rage for University Students in Chicago</h3>
+                  </div>
+                </div>
+                <div class="news_case-item_wrap">
+                  <div class="news_case-item">
+                    <p class="news_case-item_subtitle">by Alyssa Hertig • 17 Mar 2018</p>
+                    <h3 class="news_case-item_title">Soft, Hard or Velvet? New Fork Promises Crypto Upgrades Without Controversy</h3>
+                  </div>
+                </div>
+                <div class="news_case-item_wrap">
+                  <div class="news_case-item">
+                    <p class="news_case-item_subtitle">by Wolfie Zhao • 15 Feb 2018</p>
+                    <h3 class="news_case-item_title">Anheuser-Busch Owner Pilots Blockchain for Shipping</h3>
+                  </div>
+                </div>
+              </div>
+              <a class="news_button">
+                <p class="news_button-text">Read&nbsp;all&nbsp;Blog</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="customers-wrap section">
+          <div class="container">
+            <div class="customers">
+              <h2 class="customers_heading">Our&nbsp;Happy&nbsp;Customers</h2>
+              <div class="customers_slider-container swiper-container">
+                <div class="customers_slider swiper-wrapper">
+                  <div class="customers_slider-item-wrap swiper-slide">
+                    <div class="customers_slider-item">
+                      <div class="customers_slider-item_image-wrap">
+                        <div class="customers_slider-item_image">
+                          <img src="image/customers_photo.png" alt="Photo">
+                        </div>
+                      </div>
+                      <div class="customers_slider-item_quote">
+                        <p class="customers_slider-item_quote-subtitle">Helen Wade  •  United States</p>
+                        <p class="customers_slider-item_quote-text">Just wanted to say that I am very happy with all the services you have provided regarding the miners.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customers_slider-item-wrap swiper-slide">
+                    <div class="customers_slider-item">
+                      <div class="customers_slider-item_image-wrap">
+                        <div class="customers_slider-item_image">
+                          <img src="image/customers_photo.png" alt="Photo">
+                        </div>
+                      </div>
+                      <div class="customers_slider-item_quote">
+                        <p class="customers_slider-item_quote-subtitle">Helen Wade  •  United States</p>
+                        <p class="customers_slider-item_quote-text">Just wanted to say that I am very happy with all the services you have provided regarding the miners. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="customers_slider-button swiper-button-prev"></div>
+                <div class="customers_slider-button swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="roadmap-wrap section">
+          <div class="container">
+            <div class="roadmap">
+              <h2 class="roadmap_heading">Project&nbsp;Roadmap</h2>
+              <p class="roadmap_text">The roadmap focuses on the development of the technology, operations<br>infrastructure, new partnerships, and marketing initiatives.</p>
+              <div class="roadmap_map">
+                <div class="roadmap_map_item">
+                  <p class="roadmap_map_item-date">June&nbsp;2016</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <h3 class="roadmap_map_item-heading">Project Concept</h3>
+                  <p class="roadmap_map_item-text">The Crypto Group is established. Start of the Coindash concept.</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <h3 class="roadmap_map_item-heading">Platform Launch</h3>
+                  <p class="roadmap_map_item-text">Coindash trading platform is launched with full solutions in USA and Europe.</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <p class="roadmap_map_item-date">September&nbsp;2017</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <p class="roadmap_map_item-date">January&nbsp;2018</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <h3 class="roadmap_map_item-heading">Published Whitepaper</h3>
+                  <p class="roadmap_map_item-text">Our Whitepaper is released to our investors, clients and beta users.</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <h3 class="roadmap_map_item-heading">First Pre-Sale</h3>
+                  <p class="roadmap_map_item-text">Start of the ICO token first pre-sale. Test advertising campaign.</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <p class="roadmap_map_item-date">March&nbsp;2018</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <p class="roadmap_map_item-date">May&nbsp;2018</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <h3 class="roadmap_map_item-heading">Mobile App Release</h3>
+                  <p class="roadmap_map_item-text">Coindash Mobile App is released and its avilable in iOS and Android devices.</p>
+                </div>
+                <div class="roadmap_map_item">
+                  <h3 class="roadmap_map_item-heading">ICO Launch</h3>
+                </div>
+                <div class="roadmap_map_item">
+                  <p class="roadmap_map_item-date">Now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team-wrap section">
+          <div class="container">
+            <div class="team">
+              <h2 class="team-heading">Our&nbsp;Team Members</h2>
+              <div class="team-case">
+                <div class="team-case_item-wrap">
+                  <div class="team-case_item">
+                    <div class="team-case_item-image">
+                      <img src="image/team_01.png" alt="Photo">
+                    </div>
+                    <h3 class="team-case_item-heading">Jessica Baker</h3>
+                    <p class="team-case_item-subtitle">Founder & CEO</p>
+                  </div>
+                </div>
+                <div class="team-case_item-wrap">
+                  <div class="team-case_item">
+                    <div class="team-case_item-image">
+                      <img src="image/team_02.png" alt="Photo">
+                    </div>
+                    <h3 class="team-case_item-heading">Ben Marshall</h3>
+                    <p class="team-case_item-subtitle">Operations</p>
+                  </div>
+                </div>
+                <div class="team-case_item-wrap">
+                  <div class="team-case_item">
+                    <div class="team-case_item-image">
+                      <img src="image/team_03.png" alt="Photo">
+                    </div>
+                    <h3 class="team-case_item-heading">Charles Medina</h3>
+                    <p class="team-case_item-subtitle">Lead developer</p>
+                  </div>
+                </div>
+                <div class="team-case_item-wrap">
+                  <div class="team-case_item">
+                    <div class="team-case_item-image">
+                      <img src="image/team_04.png" alt="Photo">
+                    </div>
+                    <h3 class="team-case_item-heading">Carol Hansen</h3>
+                    <p class="team-case_item-subtitle">Sales lead</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-wrap section">
+          <div class="container">
+            <div class="faq">
+              <h2 class="faq-heading">Frequently Asked Questions</h2>
+              <p class="faq-text">Got questions about coindash or other crypto currency and ICO related<br>questions? We have got answers. Check it out!</p>
+              <div class="faq-case">
+                <div class="faq-case_item-wrap">
+                  <div class="faq-case_item">
+                    <h3 class="faq-case_item-heading">What is Coindash Crypto Currency?</h3>
+                    <p class="faq-case_item-text">Conveniently redefine technically sound deliverables and extensive relationships. Intrinsicly benchmark collaborative web-readiness vis-a-vis professional core competencies.</p>
+                  </div>
+                </div>
+                <div class="faq-case_item-wrap">
+                  <div class="faq-case_item">
+                    <h3 class="faq-case_item-heading">When will your ICO Sale start?</h3>
+                    <p class="faq-case_item-text">Proactively communicate robust expertise after efficient users. Competently enable best-of-breed applications whereas impactful human capital. Competently procrastinate covalent metrics for next-generation sources.</p>
+                  </div>
+                </div>
+                <div class="faq-case_item-wrap">
+                  <div class="faq-case_item">
+                    <h3 class="faq-case_item-heading">Do you have any bulk discounts?</h3>
+                    <p class="faq-case_item-text">Compellingly whiteboard dynamic products before low-risk high-yield ROI. Professionally foster cross functional leadership vis-a-vis covalent e-commerce. Dynamically cultivate fully tested schemas through ethical initiatives.</p>
+                  </div>
+                </div>
+                <div class="faq-case_item-wrap">
+                  <div class="faq-case_item">
+                    <h3 class="faq-case_item-heading">What are the benefits of ICO Token?</h3>
+                    <p class="faq-case_item-text">Uniquely customize resource-leveling leadership whereas client-focused markets. Assertively whiteboard progressive infrastructures rather than high standards in alignments.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="faq-button">
+                <p class="faq-button_text">Got&nbsp;Questions? Contact&nbsp;Us</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
       </article>
     </main>
-    <footer class="footer"></footer>
+    
+    <footer class="footer-wrap section">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-case">
+            <div class="footer-case_item-wrap">
+              <div class="footer-case_item">
+                <h3 class="footer-case_item-heading_logo">Coin<span>Dash</span></h3>
+                <p class="footer-case_item-text">Coindash is the fastest and most scalable digital asset, enabling real-time global payments anywhere in the world.</p>
+                <div class="footer-case_item-social">
+                  <a class="footer-case_item-social_link">
+                    <img src="image/footer_01_facebook.png" alt="Facebook">
+                  </a>
+                  <a class="footer-case_item-social_link">
+                    <img src="image/footer_02_twitter.png" alt="Twitter">
+                  </a>
+                  <a class="footer-case_item-social_link">
+                    <img src="image/footer_03_linkedin.png" alt="LinkedIn">
+                  </a>
+                  <a class="footer-case_item-social_link">
+                    <img src="image/footer_04_github.png" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-case_item-wrap">
+              <div class="footer-case_item">
+                <h3 class="footer-case_item-heading">Contact us</h3>
+                <div class="footer-case_item-address">
+                  <div class="footer-case_item-address_string">
+                    <div class="footer-case_item-address_string-image">
+                      <img src="image/footer_address_01.png" alt="Address">
+                    </div>
+                    <p>330 Franklin Road,<br>Suite 135A, Brentwood,<br>TN 37027-5237</p>
+                  </div>
+                  <div class="footer-case_item-address_string">
+                    <div class="footer-case_item-address_string-image">
+                      <img src="image/footer_address_02.png" alt="Phone">
+                    </div>
+                    <p>Phone: </p><a href="tel:6155555555" >615.555.5555</a>
+                  </div>
+                  <div class="footer-case_item-address_string">
+                    <div class="footer-case_item-address_string-image">
+                      <img src="image/footer_address_03.png" alt="E-mail">
+                    </div>
+                    <p>Email: </p><a href="mailto:yourfriends@coindash.com">yourfriends@coindash.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-case_item-wrap">
+              <div class="footer-case_item">
+                <h3 class="footer-case_item-heading">QUICK LINKS</h3>
+                <div class="footer-case_item-case">
+                  <div class="footer-case_item-case_column">
+                    <a class="footer-case_item-case_link">About</a>
+                    <a class="footer-case_item-case_link">Features</a>
+                    <a class="footer-case_item-case_link">Tokens</a>
+                    <a class="footer-case_item-case_link">Roadmap</a>
+                    <a class="footer-case_item-case_link">Whitepaper</a>
+                  </div>
+                  <div class="footer-case_item-case_column">
+                    <a class="footer-case_item-case_link">Help</a>
+                    <a class="footer-case_item-case_link">Terms of use</a>
+                    <a class="footer-case_item-case_link">Privacy policy</a>
+                    <a class="footer-case_item-case_link">Agreements</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-wrap_copyright">
+        <p class="footer-wrap_copyright-text">Copyright © 2018. All rights reserved. Coindash LLC</p>
+      </div> 
+    </footer>
   </div>
-  <div class="for-development" style="height: 720px;"></div>
-<!--
---> 
+-->
+
+  <div class="for-development"></div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
