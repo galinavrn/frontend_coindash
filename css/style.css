@@ -3306,6 +3306,7 @@ body.active {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-bottom: 24px;
 }
 .footer_case-item_social-link {
   width: 34px;
