@@ -1,4 +1,7 @@
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------burger-menu*/
 const burger = document.querySelector('.header_burger-wrap');
+
 if (burger) {
   const header = document.querySelector('.header');
   const menu = document.querySelector('.header_menu-wrap');
@@ -9,7 +12,8 @@ if (burger) {
     menu.classList.toggle('active');
   });
 }
-
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------counter*/
 const counterDays = document.getElementById("counter-days");
 const counterHours = document.getElementById("counter-hours");
 const counterMinutes = document.getElementById("counter-minutes");
@@ -42,7 +46,8 @@ let counterFunction = function () {
 if (counterDays && counterHours && counterMinutes && counterSeconds) {
   counterFunction();
 }
-
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------sliders*/
 var swiperFolks = new Swiper('.folks_slider-container', {
   /*loop: true,*/
   slidesPerView: 'auto',
@@ -62,3 +67,54 @@ var swiperQuote = new Swiper('.customers_slider-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------theme*/
+const switcher = document.getElementById("switcher");
+const svg = document.getElementById("svg");
+const shade = document.getElementById("shade");
+const moon = document.getElementById("moon");
+const dots = document.getElementById("dots");
+
+function setSvgTheme (degree, radius, xCoord, yCord, scale) {
+  svg.setAttribute('style', `transform: rotate(${degree}deg);`);
+  moon.setAttribute('r', radius);
+  shade.setAttribute('cx', xCoord);
+  shade.setAttribute('cy', yCord);
+  for (let i = 0; i < dots.children.length; i++) {
+    dots.children[i].setAttribute('style', `transform-origin: center center; transform: scale(${scale});`);
+  }
+}
+/*
+const bgColorLight = "#ffffff";
+function setBgColor () {
+  const bgColor = document.documentElement.style.getPropertyValue("--background-color");
+  document.documentElement.style.setProperty("--background-color", bgColor === bgColorLight ? null : bgColorLight);
+}
+*/
+let currentTheme = localStorage.getItem("theme");
+if (currentTheme == "light") {
+  document.body.classList.toggle("theme-dark");
+  document.body.classList.toggle("theme-light");
+  setSvgTheme (90, 5, 25, 0, 1);
+}
+/*--------------------------------------------------------------------------------------------------------------theme-switcher*/
+switcher.addEventListener("click", function () {
+  currentTheme = localStorage.getItem("theme");
+  if (currentTheme == "light") {
+    setSvgTheme (45, 8, 10, 2, 0);
+    //setBgColor ();
+    document.body.classList.toggle("theme-light");
+    document.body.classList.toggle("theme-dark");
+    var theme = document.body.classList.contains("theme-light") ? "light" : "dark";
+
+  } else {
+    setSvgTheme (90, 5, 25, 0, 1);
+    //setBgColor ();
+    document.body.classList.toggle("theme-dark");
+    document.body.classList.toggle("theme-light");
+    var theme = document.body.classList.contains("theme-light") ? "light" : "dark";
+  }
+  localStorage.setItem("theme", theme);
+});
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------end*/
