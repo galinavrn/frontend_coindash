@@ -107,10 +107,16 @@ body {
       &:hover {
         box-shadow: 0 4px 16px 4px rgba(255, 120, 203, 0.75);
       }
+      &:focus {
+        box-shadow: 0 4px 16px 4px rgba(255, 120, 203, 0.75);
+      }
     }
     &-clear {
       box-shadow: none;
       &:hover {
+        box-shadow: 0 4px 12px 4px rgba(34, 40, 100, 0.35);
+      }
+      &:focus {
         box-shadow: 0 4px 12px 4px rgba(34, 40, 100, 0.35);
       }
     }
@@ -174,6 +180,9 @@ body {
     &:hover {
       box-shadow: 0 4px 16px 4px rgba(40, 42, 63, 0.65);
     }
+    &:focus {
+      box-shadow: 0 4px 16px 4px rgba(40, 42, 63, 0.65);
+    }
   }
   &-clear {
     min-width: 148px;
@@ -183,6 +192,13 @@ body {
     margin-bottom: 18px;
     box-shadow: 0 8px 16px 4px rgba(34, 40, 100, 0.45);
     &:hover {
+      border-color: var(--color-white);
+      transition: 0.5s;
+      opacity: 0.75;
+      box-shadow: 0 8px 16px 8px rgba(40, 42, 63, 0.65);
+      background-color: var(--bg-color-button-hover);
+    }
+    &:focus {
       border-color: var(--color-white);
       transition: 0.5s;
       opacity: 0.75;
@@ -412,6 +428,23 @@ h3 {
           fill: var(--text-color-header-hover);
         }
       }
+      &:focus {
+        .header_menu-link {
+          color: var(--text-color-header-hover);
+          &::after {
+            left: 16px;
+            width: calc(100% - 32px);
+            height: 1px;
+            transition: all 0.5s;
+          }
+        }
+        #moon {
+          fill: var(--text-color-header-hover);
+        }
+        #dots > circle {
+          fill: var(--text-color-header-hover);
+        }
+      }
     }
     &-link {
       position: relative;
@@ -585,6 +618,10 @@ h3 {
       transition: 0.5s;
     }
     &:hover .intro_link-clear_text {
+      color: var(--color-white);
+      transition: 0.5s;
+    }
+    &:focus .intro_link-clear_text {
       color: var(--color-white);
       transition: 0.5s;
     }
@@ -1633,6 +1670,10 @@ h3 {
       color: var(--color-white);
       transition: 0.5s;
     }
+    &:focus .news_button-text {
+      color: var(--color-white);
+      transition: 0.5s;
+    }
   }
 }
 /*------------------------------------------------------------*/
@@ -2184,6 +2225,10 @@ h3 {
       color: var(--color-white);
       transition: 0.5s;
     }
+    &:focus .faq_button-text {
+      color: var(--color-white);
+      transition: 0.5s;
+    }
   }
 }
 /*------------------------------------------------------------*/
@@ -2298,6 +2343,9 @@ h3 {
           overflow: hidden;
           text-align: center;
           &:hover {
+            background-color: var(--text-color-pale);
+          }
+          &:focus {
             background-color: var(--text-color-pale);
           }
         }
