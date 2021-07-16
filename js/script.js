@@ -24,7 +24,7 @@ let counterFunction = function () {
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-  let sale = "July 30, 2021 22:00:00",
+  let sale = "August 31, 2021 22:00:00",
       countDown = new Date(sale).getTime(),
       timeLast = setInterval(function() {    
 
@@ -69,6 +69,7 @@ var swiperQuote = new Swiper('.customers_slider-container', {
 });
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------theme*/
+var metaThemeColor = document.querySelector("meta[name=theme-color]");
 const switcher = document.getElementById("switcher");
 const svg = document.getElementById("svg");
 const shade = document.getElementById("shade");
@@ -84,35 +85,32 @@ function setSvgTheme (degree, radius, xCoord, yCord, scale) {
     dots.children[i].setAttribute('style', `transform-origin: center center; transform: scale(${scale});`);
   }
 }
-/*
-const bgColorLight = "#ffffff";
-function setBgColor () {
-  const bgColor = document.documentElement.style.getPropertyValue("--background-color");
-  document.documentElement.style.setProperty("--background-color", bgColor === bgColorLight ? null : bgColorLight);
-}
-*/
+
 let currentTheme = localStorage.getItem("theme");
 if (currentTheme == "light") {
   document.body.classList.toggle("theme-dark");
   document.body.classList.toggle("theme-light");
+  metaThemeColor.setAttribute("content", "rgb(255, 255, 255)");
   setSvgTheme (90, 5, 25, 0, 1);
+} else if (currentTheme == "dark") {
+  metaThemeColor.setAttribute("content", "rgb(46, 56, 128)");
 }
 /*--------------------------------------------------------------------------------------------------------------theme-switcher*/
 switcher.addEventListener("click", function () {
   currentTheme = localStorage.getItem("theme");
   if (currentTheme == "light") {
     setSvgTheme (45, 8, 10, 2, 0);
-    //setBgColor ();
     document.body.classList.toggle("theme-light");
     document.body.classList.toggle("theme-dark");
     var theme = document.body.classList.contains("theme-light") ? "light" : "dark";
-
+    metaThemeColor.setAttribute("content", "rgb(46, 56, 128)");
   } else {
     setSvgTheme (90, 5, 25, 0, 1);
     //setBgColor ();
     document.body.classList.toggle("theme-dark");
     document.body.classList.toggle("theme-light");
     var theme = document.body.classList.contains("theme-light") ? "light" : "dark";
+    metaThemeColor.setAttribute("content", "rgb(255, 255, 255)");
   }
   localStorage.setItem("theme", theme);
 });
